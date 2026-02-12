@@ -1,19 +1,23 @@
 # practica-1poligono
-Práctica: Dibujo de un Polígono
+Práctica de Dibujo de un Polígono en Blender
 
-Este proyecto explica cómo dibujar un polígono regular utilizando programación. Un polígono es una figura geométrica plana compuesta por segmentos rectos consecutivos.
+Este repositorio contiene la explicación detallada para crear un polígono regular utilizando el software de modelado 3D Blender.
 
-Conceptos Básicos
+ Procedimiento Técnico
 
-Para dibujar cualquier polígono de  lados, debemos considerar que la suma de los ángulos exteriores de cualquier polígono simple siempre es 360°. Por lo tanto, el ángulo de giro para cada vértice se calcula con la fórmula:
+En Blender, la creación de polígonos se basa en la generación de una primitiva de tipo Círculo, donde el número de vértices determina la forma final.
 
-Donde  es el número de lados (ej.  para un triángulo,  para un cuadrado).
+Pasos para realizar la práctica:
 
- Pasos para realizar la práctica:
+1. Limpieza de Escena: Eliminar el cubo inicial presionando `X` y seleccionando Delete.
+2. Generación de la Malla:
+    Presionar el atajo `Shift + A`.
+   Seleccionar Mesh> Circle.
+3. Configuración del Polígono:
+     Antes de mover nada, abrir el panel "Add Circle" que aparece en la esquina inferior izquierda.
+   Vertices: Cambiar el valor al número de lados deseado (ej. 3 para triángulo, 5 para pentágono, 8 para octágono).
+   Fill Type: Cambiar de "Nothing" a "NGon" para que el polígono tenga una cara sólida.
+4. Finalización: El polígono queda centrado en las coordenadas (0, 0, 0) con lados de longitud uniforme.
 
-1. Definir el número de lados: Elige cuántos lados tendrá tu figura.
-2. Calcular el ángulo: Divide 360 entre el número de lados.
-3. Bucle de dibujo:
-* Mover hacia adelante una distancia .
-* Girar el ángulo calculado.
-* Repetir este proceso  veces.
+Fundamento Geométrico
+Blender distribuye los vértices de manera equidistante en un radio de 360 grados. La distancia entre cada vértice es constante, lo que garantiza que el polígono sea regular.
