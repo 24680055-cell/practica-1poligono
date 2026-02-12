@@ -21,3 +21,4 @@ Pasos para realizar la práctica:
 
 Fundamento Geométrico
 Blender distribuye los vértices de manera equidistante en un radio de 360 grados. La distancia entre cada vértice es constante, lo que garantiza que el polígono sea regular.
+También se incluye un script de Python para automatizar la creación del polígono desde la pestaña de Scripting en Blender.
